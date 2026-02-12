@@ -11,7 +11,7 @@ def test_get_personnummer_from_skatteverket():
     assert response.status_code == 200
     assert response.headers.get("Content-Type") == "application/json;charset=utf-8"
 
-    # Prints whole response body from Skatteverket, more than we need
+    # Prints whole response body from Skatteverket, more than we 
     print(response.json())  
 
     # Prints the "results" parts of the payload
